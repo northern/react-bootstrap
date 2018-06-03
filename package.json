@@ -1,0 +1,52 @@
+{
+  "name": "@northern/react-bootstrap",
+  "version": "0.0.1",
+  "description": "A small collection of Reactified Bootstap components.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublish": "babel src --out-dir lib --ignore *.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northern/react-bootstrap.js.git"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "library"
+  ],
+  "author": "northern",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/northern/react-bootstrap.js/issues"
+  },
+  "homepage": "https://github.com/northern/react-bootstrap.js#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "node_mdules",
+      "lib"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/enzyme.js"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3"
+  }
+}
